@@ -1,6 +1,6 @@
 import React from 'react';
 
-import Card from './Card2';
+import Card from './Card';
 
 import '../assets/styles/components/SimilarListings.scss';
 
