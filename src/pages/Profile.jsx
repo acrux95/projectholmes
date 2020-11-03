@@ -1,5 +1,6 @@
 import React from 'react';
 
+import { Container, FormControl, InputLabel, Input, FormHelperText, Grid } from '@material-ui/core';
 import Layout from '../components/Layout';
 import SimilarListings from '../components/SimilarListings';
 import ActionButton from '../components/ActionButton';
@@ -7,12 +8,10 @@ import ActionButton from '../components/ActionButton';
 import '../assets/styles/Profile.scss';
 
 import photoUser from '../assets/images/ProfileForm.jpg';
-import { Container, FormControl, InputLabel, Input, FormHelperText, Grid } from '@material-ui/core';
-import ButtonMenu from '../components/ButtonMenu';
 
 const Profile = () => {
   const open = () => (
-    $("#uploadfile").click());
+    $('#uploadfile').click());
   return (
     <>
       <Layout>
@@ -66,12 +65,15 @@ const Profile = () => {
           <div className='Grid__Imagen'>
             <img className='Grid__Imagen--usuario' src={photoUser} alt='' />
             <div className='Grid__Imagen--btnCambiar'>
-            <ActionButton text='Cambiar imágen' onClick={open} ><input type="file" id="uploadfile" /> </ActionButton>
+              <ActionButton text='Cambiar imágen' onClick={open}>
+                <input type='file' id='uploadfile' />
+                {' '}
+              </ActionButton>
             </div>
           </div>
           <div className='Grid__Cambios'>
             <div className='Grid__BotonCambios'>
-            <ActionButton text='Guardar cambios' />
+              <ActionButton text='Guardar cambios' />
             </div>
           </div>
           <div className='Grid__imagen--contraseña'>
@@ -85,8 +87,14 @@ const Profile = () => {
         <div className='Grid__MisFavoritos'>
           <SimilarListings />
         </div>
-        <br/><br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <ActionButton text='Añadir Publicación' to='/addpost'></ActionButton><br/><br/><br/><br/>
+        <br />
+        <br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <ActionButton text='Añadir Publicación' to='/addpost' />
+        <br />
+        <br />
+        <br />
+        <br />
         <div className='Mis__Favoritos'>
           <h1>Mis Favoritos</h1>
         </div>
@@ -94,7 +102,8 @@ const Profile = () => {
         <div className='Grid__Publicaciones'>
           <SimilarListings />
         </div>
-        <br/><br/>
+        <br />
+        <br />
       </Layout>
 
     </>
