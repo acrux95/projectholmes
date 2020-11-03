@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom'
+import { Link } from 'react-router-dom';
 
 import photo from '../assets/images/hotel1.jpg';
 import heart from '../assets/images/heart.png';
