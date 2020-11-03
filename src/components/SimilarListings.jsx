@@ -1,5 +1,5 @@
 import React from 'react';
-import Card from './Card';
+import Card from './Card.jsx';
 import '../assets/styles/components/SimilarListings.scss';
 
 const SimilarListings = () => (
