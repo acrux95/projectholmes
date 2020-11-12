@@ -92,7 +92,7 @@ const AddPost = () => {
         <h1>Añadir Publicación</h1>
         <section className='homeDescriptions'>
           <h2>Ubicación</h2>
-          <ButtonMenu description='Selecciona tu País' label='País' id='country' values={countries} value={country} setValue={setCountry} />
+          <ButtonMenu description='Selecciona tu País' label='País' id='country' names={countries} name={country} setName={setCountry} />
           <ButtonMenu description='Venta o Renta' label='Venta o renta' id='country' />
           <ButtonMenu description='Selecciona tu Estado o Departamento' label='Estado' id='state' />
           <ButtonMenu description='Selecciona tu Holmes' label='Tipo' id='type' />
