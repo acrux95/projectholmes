@@ -85,14 +85,14 @@ const AddPost = () => {
       label: 'Más de 1500USD',
     },
   ];
-  const [country, setCountry] = React.useState([]);
+  // const [country, setCountry] = React.useState([]);
   return (
     <>
       <Layout>
         <h1>Añadir Publicación</h1>
         <section className='homeDescriptions'>
           <h2>Ubicación</h2>
-          <ButtonMenu description='Selecciona tu País' label='País' id='country' names={countries} name={country} setName={setCountry} />
+          <ButtonMenu description='Selecciona tu País' label='País' id='country' />
           <ButtonMenu description='Venta o Renta' label='Venta o renta' id='country' />
           <ButtonMenu description='Selecciona tu Estado o Departamento' label='Estado' id='state' />
           <ButtonMenu description='Selecciona tu Holmes' label='Tipo' id='type' />
