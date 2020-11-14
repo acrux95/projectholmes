@@ -28,7 +28,6 @@ const ButtonMenu = ({ id, label, description }) => {
       label: 'Colombia',
     },
   ];
-  
 
   return (
     <form className={classes.root} noValidate autoComplete='off'>
