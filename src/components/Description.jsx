@@ -6,7 +6,7 @@ const Description = ({ text }) => {
 
     <div className='Description'>
       <div className='Description_block'>
-        <h4 className='Description__Title'> Description </h4>
+        <h4 className='Description__Title'> Descripción </h4>
         <hr className='Description__Line' />
         <p className='Description__Paragraph'>{text}</p>
       </div>

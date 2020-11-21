@@ -1,6 +1,6 @@
 import React from 'react';
 import Carousel from '../components/Carousel';
-import SimilarListings from '../components/SimilarListings';
+import SimilarListings3 from '../components/SimilarListings3';
 import DetailBar from '../components/DetailsBar';
 import Features from '../components/Features';
 import Layout from '../components/Layout';
@@ -11,10 +11,10 @@ const DetailsProperty = () => (
       <Carousel />
       <DetailBar />
 
-      <Features feature='Sala de Juegos' />
+      {/* <Features feature='Sala de Juegos' /> */}
       <h4 className='CardsTitle'>Sugerencias</h4>
       <div className='Cardss'>
-        <SimilarListings />
+        <SimilarListings3 />
       </div>
 
     </Layout>

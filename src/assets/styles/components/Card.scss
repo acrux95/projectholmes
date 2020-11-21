@@ -47,9 +47,12 @@
   border-top: 1px solid grey;
   width: 100%;
   border-right: 2px solid gray;
-
+  & p {
+    width: 10px;
+  }
   &:last-child {
     border-right: none;
+  
   }
 }
 .card__footer--bed,

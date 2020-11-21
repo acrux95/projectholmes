@@ -2,6 +2,11 @@ import React from 'react';
 // import { useSelector, useDispatch } from 'react-redux';
 import Layout from '../components/Layout';
 import ButtonMenu from '../components/ButtonMenu';
+import StateMenu from '../components/StateMenu';
+import CityMenu from '../components/CityMenu';
+import TypeOfAdd from '../components/TypeOfAdd';
+import CostMenu from '../components/CostMenu';
+import HomeMenu from '../components/HomeMenu';
 import ActionButton from '../components/ActionButton';
 // import { COLOMBIA, MEXICO } from '../actions';
 
@@ -10,81 +15,7 @@ import image from '../assets/images/photo1.jpeg';
 
 const AddPost = () => {
 
-  const countries = [
-    {
-      value: 'MX',
-      label: 'México',
-    },
-    {
-      value: 'COL',
-      label: 'Colombia',
-    },
-  ];
-  const states = [
-    {
-      value: 'MX',
-      label: 'México',
-    },
-    {
-      value: 'COL',
-      label: 'Colombia',
-    },
-  ];
-  const cities = [
-    {
-      value: 'MX',
-      label: 'México',
-    },
-    {
-      value: 'COL',
-      label: 'Colombia',
-    },
-  ];const sells = [
-    {
-      value: 'sell',
-      label: 'Compra',
-    },
-    {
-      value: 'rent',
-      label: 'Renta',
-    },
-  ];
-  const homes = [
-    {
-      value: 'home',
-      label: 'Casa',
-    },
-    {
-      value: 'apartment',
-      label: 'Departamento',
-    },
-    {
-      value: 'wipe',
-      label: 'Terreno',
-    },
-    {
-      value: 'torre',
-      label: 'Edificio',
-    },
-  ];
-  const costs = [
-    {
-      value: 'price1',
-      label: 'Menos de 200USD',
-    },
-    {
-      value: 'price2',
-      label: 'entre 201 y 700 USD ',
-    },
-    {
-      value: 'price3',
-      label: 'entre 701 y 1,500 USD',
-    },
-    {
-      value: 'price4',
-      label: 'Más de 1500USD',
-    },
-  ];
+  
   // const [country, setCountry] = React.useState([]);
   return (
     <>
@@ -93,15 +24,15 @@ const AddPost = () => {
         <section className='homeDescriptions'>
           <h2>Ubicación</h2>
           <ButtonMenu description='Selecciona tu País' label='País' id='country' />
-          <ButtonMenu description='Venta o Renta' label='Venta o renta' id='country' />
-          <ButtonMenu description='Selecciona tu Estado o Departamento' label='Estado' id='state' />
-          <ButtonMenu description='Selecciona tu Holmes' label='Tipo' id='type' />
-          <ButtonMenu description='Selecciona tu Ciudad' label='Ciudad' id='city' />
+          <TypeOfAdd description='Venta o Renta' label='Venta o renta' id='country' />
+          <StateMenu description='Selecciona tu Estado o Departamento' label='Estado' id='state' />
+          <HomeMenu description='Selecciona tu Holmes' label='Tipo' id='type' />
+          <CityMenu description='Selecciona tu Ciudad' label='Ciudad' id='city' />
           <ButtonMenu description='Área' label='Area' id='area' />
           <ButtonMenu description='Selecciona tu Colonia o barrio' label='Colonia' id='neightbor' />
           <ButtonMenu description='Nivel o Planta' label='Nivel' id='nivel' />
           <ButtonMenu description='Selecciona tu Calle' label='Calle' id='street' />
-          <ButtonMenu description='Costo de Venta o Renta' label='Costo' id='cost' />
+          <CostMenu description='Costo de Venta o Renta' label='Costo' id='cost' />
         </section>
         <section className='homeDescriptions'>
           <h2>Datos de tu Propiedad</h2>

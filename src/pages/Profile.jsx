@@ -3,6 +3,7 @@ import React from 'react';
 import { Container, FormControl, InputLabel, Input, FormHelperText, Grid } from '@material-ui/core';
 import Layout from '../components/Layout';
 import SimilarListings from '../components/SimilarListings';
+import SimilarListings2 from '../components/SimilarListings2';
 import ActionButton from '../components/ActionButton';
 
 import '../assets/styles/Profile.scss';
@@ -100,7 +101,7 @@ const Profile = () => {
         </div>
 
         <div className='Grid__Publicaciones'>
-          <SimilarListings />
+          <SimilarListings2 />
         </div>
         <br />
         <br />
